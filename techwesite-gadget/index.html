@@ -1,0 +1,203 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ace Tech Sale - The Best Gadgets</title>
+    <link rel="stylesheet" href="style.css">
+    <script defer src="script.js"></script>
+    <link rel="icon" type="image/png" href="assets/favicon2.png">
+    <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@400;600;700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
+</head>
+<body>
+    <!-- Navbar -->
+    <nav class="navbar">
+        <div class="logo">
+            <div class="logo-icon">
+                <img src="assets/favicon2.png" width="20" height="20" alt="top-logo"> AceTech
+            </div>
+        </div>
+        <div class="hamburger" onclick="toggleMenu()">☰</div>
+        <ul class="nav-links">
+            <li><a href="#">Home</a></li>
+            <li><a href="#">Products</a></li>
+            <li><a href="#">Deals</a></li>
+            <li><a href="#">Contact</a></li>
+            <li><a href="#" class="nav-cta">Sign Up</a></li>
+        </ul>
+    </nav>
+
+    <!-- Mobile Overlay Menu -->
+    <div class="mobile-menu" id="mobileMenu">
+        <div class="close-btn" onclick="toggleMenu()">✖</div>
+        <ul>
+            <li><a href="#">Home</a></li>
+            <li><a href="#">Products</a></li>
+            <li><a href="#">Deals</a></li>
+            <li><a href="#">Contact</a></li>
+            <li><a href="#" class="nav-cta">Sign Up</a></li>
+        </ul>
+    </div>
+
+    <!-- Hero Section -->
+    <header class="hero">
+        <div class="hero-content">
+            <h1>Discover the Best <span class="h1-span">Tech Gadgets</span></h1>
+            <p>Get the best deals on high-quality technology products.</p>
+            <a href="#" class="cta-button-2">Shop Now</a>
+        </div>
+        <div class="hero-image">
+            <img src="assets/hero_image_3.jpg" alt="Hero Image">
+        </div>
+    </header>
+
+    <!-- Features Section -->
+<section class="features">
+    <div class="container">
+        <h1>Our Features</h1>
+        <div class="cards">
+            <div class="card" onclick="popOut(this)">
+                <img src="assets/hero_image_2.jpg" alt="Feature 1">
+                <h2>Gaming PC</h2>
+                <p>Discover the power of our first feature.</p>
+                <button>Click to Learn More</button>
+            </div>
+            <div class="card" onclick="popOut(this)">
+               <div class="card-photo"><img src="assets/hero_image_5.jpg" alt="Feature 2"></div>
+                <h2>Business PC</h2>
+                <p>Explore the benefits of our second feature.</p>
+                <button>Click to Learn More</button>
+            </div>
+            <div class="card" onclick="popOut(this)">
+                <img src="assets/hero_image_1 (2).jpg" alt="Feature 3">
+                <h2>Mobile Phones</h2>
+                <p>Learn more about our third feature.</p>
+                <button>Click to Learn More</button>
+            </div>
+        </div>
+    </div>
+</section>
+
+    <section class="sub-hero">
+        <div class="sub-hero-image">
+            <img src="assets/subhero.jpg" alt="Hero Image">
+        </div>
+        <div class="sub-hero-content">
+            <h2>Utilize <span class="sub-hero-span">Quality</span>  Anywhere & Anytime </h2>
+            <p>Stay ahead with cutting-edge technology that fits your lifestyle.
+                 Whether you're working remotely, traveling, or simply enjoying your daily routine, 
+                 our premium gadgets provide reliability, efficiency, and convenience. Experience top-tier
+                 performance wherever you go—because innovation should never be limited by location.</p>
+            <a href="#" class="sub-hero-btn">Get Started</a>
+        </div>
+    </section>
+    
+    <section class="video-section">
+        <h3>Enjoy Our Products Day And Night With Max Comfort</h3>
+        <div class="video-container">
+            <video controls autoplay muted loop>
+                <source src="assets/video.mp4" type="video/mp4">
+            </video>
+        </div>
+    </section>
+
+    <section class="trust-section">
+        <div class="trust-container">
+            <div class="trust-logos">
+                <img src="assets/amazon.png" alt="amazon">
+                <img src="assets/apple.png" alt="apple">
+                <img src="assets/google.png" alt="google">
+                <img src="assets/mastercard-logo-mastercard-logo-png-vector-download-19.png" alt="mastercard">
+                <img src="assets/microsoft-logo-microsoft-icon-transparent-free.png" alt="microsoft">
+                <img src="assets/paypal.png" alt="paypal">
+                <img src="assets/Slack-Logo.png" alt="Slack">
+                <!-- for seamless infinite effect -->
+                <img src="assets/amazon.png" alt="amazon">
+                <img src="assets/apple.png" alt="apple">
+                <img src="assets/google.png" alt="google">
+                <img src="assets/mastercard-logo-mastercard-logo-png-vector-download-19.png" alt="mastercard">
+                <img src="assets/microsoft-logo-microsoft-icon-transparent-free.png" alt="microsoft">
+                <img src="assets/paypal.png" alt="paypal">
+                <img src="assets/Slack-Logo.png" alt="Slack">
+
+                <img src="assets/amazon.png" alt="amazon">
+                <img src="assets/apple.png" alt="apple">
+                <img src="assets/google.png" alt="google">
+                <img src="assets/mastercard-logo-mastercard-logo-png-vector-download-19.png" alt="mastercard">
+                <img src="assets/microsoft-logo-microsoft-icon-transparent-free.png" alt="microsoft">
+                <img src="assets/paypal.png" alt="paypal">
+                <img src="assets/Slack-Logo.png" alt="Slack">
+            </div>
+        </div>
+    </section>
+
+    <section class="testimonial-section">
+        <h2>Here's What Our Customers Say</h2>
+        <div class="testimonial-container">
+            <button id="prev" class="arrow">&lt;</button> <!-- Left Arrow Icon -->
+            
+            <div class="testimonial">
+                <img src="assets/female.jpg" alt="Customer 1" class="testimonial-img">
+                <p class="testimonial-text">"Absolutely love this gadget! It has made my daily tasks so much easier. Highly recommend!"</p>
+                <div class="stars">
+                    ★★★★☆
+                </div>
+                <h4 class="customer-name">Sarah Johnson</h4>
+            </div>
+    
+            <button id="next" class="arrow">&gt;</button> <!-- Right Arrow Icon -->
+        </div>
+    </section>
+    
+    <!--Footer Section-->
+    
+    <footer class="footer">
+        <div class="footer-container">
+            <!-- Logo and About -->
+            <div class="footer-logo">
+                    <div class="footer-full-logo"> 
+                   <div class="footer-inner-logo"><img src="assets/favicon2.png" 
+                    width="20" height="20" alt="top-logo"><h4 class="footer-logo-text">AceTech</h4>
+                   </div>
+                </div>
+                <p>Your go-to store for high-quality gadgets, available anytime, anywhere.</p>
+            </div>
+    
+            
+
+            <!-- Navigation Links -->
+            <div class="footer-links">
+                <h3>Quick Links</h3>
+                <ul>
+                    <li><a href="#">Home</a></li>
+                    <li><a href="#">Shop</a></li>
+                    <li><a href="#">About Us</a></li>
+                    <li><a href="#">Contact</a></li>
+                </ul>
+            </div>
+    
+            <!-- Social Media Links -->
+            <div class="footer-social">
+                <h3>Follow Us</h3>
+                <div class="social-icons">
+                    <a href="#"><i class="fab fa-facebook"></i></a>
+                    <a href="#"><i class="fab fa-twitter"></i></a>
+                    <a href="#"><i class="fab fa-instagram"></i></a>
+                    <a href="#"><i class="fab fa-linkedin"></i></a>
+                </div>
+            </div>
+        </div>
+    
+        <!-- Copyright -->
+        <div class="footer-bottom">
+            <p>&copy; 2025 AceTech. All rights reserved.</p>
+        </div>
+    </footer>
+    
+    <!-- Font Awesome for Social Icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
+    
+    
+</body>
+</html>
