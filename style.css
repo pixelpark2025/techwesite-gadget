@@ -1,0 +1,11 @@
+body {
+    font-family: 'Montserrat', Arial, sans-serif;
+}
+
+.hero-text-container {
+    background-color: aqua;
+    position: relative;
+    z-index: 1;
+    display: flex;
+}
+
